@@ -1,9 +1,12 @@
 package com.huanchengfly.tieba.post.components
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import android.text.Layout
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
 import android.text.Selection
 import android.text.Spannable
 import android.text.method.LinkMovementMethod
@@ -18,6 +21,9 @@ object LinkMovementClickMethod : LinkMovementMethod() {
     private var lastClickTime: Long = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
     override fun canSelectArbitrarily(): Boolean {
         return false
     }
@@ -41,6 +47,7 @@ object LinkMovementClickMethod : LinkMovementMethod() {
                 } else {
                     Selection.setSelection(buffer, buffer.getSpanStart(link[0]),
                             buffer.getSpanEnd(link[0]))
+<<<<<<< HEAD
 =======
     override fun onTouchEvent(widget: TextView?, buffer: Spannable?, event: MotionEvent?): Boolean {
         val action = event!!.action
@@ -68,6 +75,8 @@ object LinkMovementClickMethod : LinkMovementMethod() {
                             buffer.getSpanEnd(link[0]))
                     lastClickTime = System.currentTimeMillis()
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
                 }
                 return true
             } else {
@@ -75,14 +84,20 @@ object LinkMovementClickMethod : LinkMovementMethod() {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
 
         return false
     }
 
     override fun initialize(widget: TextView?, text: Spannable?) {
         Selection.removeSelection(text)
+<<<<<<< HEAD
 =======
         return super.onTouchEvent(widget, buffer, event)
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
     }
 }

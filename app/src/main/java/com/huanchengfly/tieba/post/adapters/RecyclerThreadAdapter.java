@@ -29,9 +29,13 @@ import com.huanchengfly.tieba.post.api.models.CommonResponse;
 import com.huanchengfly.tieba.post.api.models.ThreadContentBean;
 import com.huanchengfly.tieba.post.components.LinkMovementClickMethod;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.huanchengfly.tieba.post.components.LinkTouchMovementMethod;
 =======
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+import com.huanchengfly.tieba.post.components.LinkTouchMovementMethod;
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
 import com.huanchengfly.tieba.post.components.spans.MyImageSpan;
 import com.huanchengfly.tieba.post.components.spans.MyURLSpan;
 import com.huanchengfly.tieba.post.components.spans.MyUserSpan;
@@ -85,9 +89,13 @@ public class RecyclerThreadAdapter extends MultiBaseAdapter<ThreadContentBean.Po
     private NavigationHelper navigationHelper;
     private LinearLayout.LayoutParams defaultLayoutParams;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private LinearLayout.LayoutParams defaultLayoutParamsWithNoMargins;
 =======
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+    private LinearLayout.LayoutParams defaultLayoutParamsWithNoMargins;
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
     private ThreadContentBean.ThreadBean threadBean;
     private ThreadContentBean dataBean;
     private TreeMap<Integer, List<PhotoViewBean>> photoViewBeansMap;
@@ -122,9 +130,13 @@ public class RecyclerThreadAdapter extends MultiBaseAdapter<ThreadContentBean.Po
         defaultLayoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         defaultLayoutParams.setMargins(0, 8, 0, 8);
 <<<<<<< HEAD
+<<<<<<< HEAD
         defaultLayoutParamsWithNoMargins = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 =======
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+        defaultLayoutParamsWithNoMargins = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
         photoViewBeansMap = new TreeMap<>();
         blockCacheMap = new HashMap<>();
     }
@@ -689,6 +701,9 @@ public class RecyclerThreadAdapter extends MultiBaseAdapter<ThreadContentBean.Po
 
     private TextView createTextView(int type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
         TextView textView;
         if (type == TEXT_VIEW_TYPE_CONTENT) {
             TintMySpannableTextView mySpannableTextView = new TintMySpannableTextView(mContext);
@@ -701,11 +716,14 @@ public class RecyclerThreadAdapter extends MultiBaseAdapter<ThreadContentBean.Po
             tintTextView.setMovementMethod(LinkMovementClickMethod.getInstance());
             textView = tintTextView;
         }
+<<<<<<< HEAD
 =======
         TintTextView textView = new TintTextView(mContext);
         textView.setMovementMethod(LinkMovementClickMethod.getInstance());
         textView.setClickable(false);
 >>>>>>> bffc7b1... fix: 修复长按贴中文本无法弹出菜单
+=======
+>>>>>>> 79a5a1c8d2d5b8786f584f2660dc7b56db8952b7
         textView.setFocusable(false);
         textView.setClickable(false);
         textView.setLongClickable(false);
